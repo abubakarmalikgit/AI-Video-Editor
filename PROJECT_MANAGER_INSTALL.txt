@@ -1,0 +1,22 @@
+MALIXARIS STUDIO — REAL PROJECT MANAGER PATCH
+
+INSTALL
+1. Close MalixAris Studio.
+2. Extract this ZIP into the existing application folder, preserving folders.
+3. Allow replacement of project.py, app.py and the three files inside web.
+4. Restart the application.
+
+FEATURES
+- Projects tab lists named saved editing sessions.
+- New Project, Save Current Project, Open, Rename and Duplicate.
+- Active named projects auto-save edits after a short pause and save after timeline builds.
+- Delete removes the library entry but deliberately retains hash-based timeline/agent data for recovery.
+- Discovers older hash-based timeline/state files and lists them as recovered legacy projects.
+- Opening a named project restores script, footage/audio paths, language and export settings, and displays a saved timeline snapshot when one exists.
+- Opening a recovered legacy project displays its saved timeline without overwriting the current input fields.
+
+LIMITATIONS
+- Source media is not copied into the project; original media paths must remain accessible.
+- Older hash-only projects may not have original script/media settings recoverable.
+- This adds project/session management to the existing script-driven timeline; it does not add a manual multitrack drag-and-drop editing engine.
+- Test on a copy first and keep a backup of the data folder.

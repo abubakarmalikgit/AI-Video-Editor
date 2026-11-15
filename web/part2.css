@@ -1,0 +1,10 @@
+input[type=checkbox]{width:auto;accent-color:#7c5cff;transform:scale(1.2);margin-right:8px}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:16px}
+.lc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:8px}
+.lc .th{position:relative;aspect-ratio:16/9;background:#000;border-radius:10px;overflow:hidden}
+.lc .th img{width:100%;height:100%;object-fit:cover}
+.lc .nb{position:absolute;left:8px;top:8px;background:rgba(13,14,20,.85);border:1px solid var(--line);border-radius:7px;padding:1px 8px;font:12px var(--mono);color:var(--cy)}
+.lc .ds{font-size:12px;color:var(--mute);min-height:34px}
+.chk{display:flex;align-items:center;margin:14px 0 4px;color:var(--tx);font-size:14px}
+.note{font-size:12px;color:var(--mute);margin-top:10px;line-height:1.6}
+.steps{margin:6px 0 0 18px;color:var(--mute);font-size:13px;line-height:1.8}

@@ -1,0 +1,13 @@
+MalixAris Studio 3.2 — Reliability Fix Pack
+
+Install: extract this ZIP into your existing MalixAris_Studio_3.0 folder and allow replacement of the included files. Back up the folder first. This ZIP contains only changed files.
+
+Fixes:
+- Clear separation of source videos/images, script rows and timeline clip-piece counts. A 7-row script can legitimately use 12 source files; the interface now labels these separately.
+- Explicit transition requests now receive deterministic fallback actions when the AI omits them, and transitions can only be attached to valid boundaries.
+- FFmpeg transition failures now attempt a visible fade-through-black transition instead of silently substituting a hard cut. Transition cache keys were versioned to avoid reusing old hard-cut fallback files.
+- Gemini clients are pinned to gemini-3.6-flash. Temporary rate limits use longer backoff; exhausted daily/quota limits are reported clearly instead of cycling through other models.
+- Rendered output library uses properly encoded file URIs from Python for more reliable playback in pywebview.
+- Existing project modules and workflow are retained.
+
+Validation performed: Python syntax compilation, JavaScript syntax checks, transition planning unit checks, output URI checks and ZIP integrity. A real Windows render and Gemini API quota test require the user's machine, FFmpeg build and API key.
