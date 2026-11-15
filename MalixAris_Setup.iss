@@ -22,7 +22,7 @@ RestartApplications=no
 ArchitecturesInstallIn64BitMode=x64
 
 [Tasks]
-Name: "desktopicon"; Description: "Create a desktop shortcut"; GroupDescription: "Additional shortcuts:"; Flags: checked
+Name: "desktopicon"; Description: "Create a desktop shortcut"; GroupDescription: "Additional shortcuts:"
 
 [Dirs]
 Name: "{app}\data"
